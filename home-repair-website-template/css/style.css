@@ -41,6 +41,11 @@
     color: #FFFFFF;
 }
 
+.btn-clicked {
+    color: #FFFFFF;
+
+}
+
 .btn-square {
     width: 38px;
     height: 38px;

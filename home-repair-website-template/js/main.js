@@ -51,18 +51,34 @@
   });
 })(jQuery);
 
-// Service Tabs
+/*-----Service Tabs-----*/
+
+// Dom Elements: Tabs
 const constructionTab = document.getElementById("constructionService");
 const electricalBackupTab = document.getElementById("electricalBackupService");
-const electricianServiceTab = document.getElementById("electricanServiceContainer");
+const electricianServiceTab = document.getElementById(
+  "electricanServiceContainer"
+);
 const solarPanelTab = document.getElementById("solarPanelInstallation");
 
+// Dom Elements: Button
+const constructionButton = document.getElementById("constructionServiceButton");
+const electricalBackupButton = document.getElementById(
+  "electricalBackupButton"
+);
+const electricianServiceButton = document.getElementById(
+  "electrianServicesButton"
+);
+const solarPanelButton = document.getElementById(
+  "solarPanelInstallationButton"
+);
 
 function displayConstructionTab() {
   constructionTab.style.display = "block";
   electricalBackupTab.style.display = "none";
   electricianServiceTab.style.display = "none";
   solarPanelTab.style.display = "none";
+
 }
 
 function displayElectricalBackup() {
@@ -89,11 +105,6 @@ function displaySolarPanels() {
 document.addEventListener("DOMContentLoaded", () => {
   displayConstructionTab();
 });
-
-const constructionButton = document.getElementById("constructionServiceButton");
-const electricalBackupButton = document.getElementById("electricalBackupButton");
-const electricianServiceButton = document.getElementById("electrianServicesButton");
-const solarPanelButton = document.getElementById("solarPanelInstallationButton");
 
 constructionButton.addEventListener("click", displayConstructionTab);
 electricalBackupButton.addEventListener("click", displayElectricalBackup);
